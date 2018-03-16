@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width: 1400px) {
+	.container {
+    	width: 1350px;
+  	}
+	#hpart .hpart-first-row .adv-box { width:728px; }
+}
+
+@media (min-width: 2400px) {
+	#social-hub .left-part-bg, 
+	#bmxa-tv .right-part-bg, 
+	#more-news .left-part-bg, 
+	#more-news .right-part-bg { display:block; }
+}

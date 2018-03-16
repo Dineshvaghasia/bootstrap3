@@ -1,0 +1,554 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+    font-family: 'latoblack_italic';
+    src: url('../fonts/lato-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/lato-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('../fonts/lato-black-webfont.woff2') format('woff2'),
+         url('../fonts/lato-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'rajdhanisemibold';
+    src: url('../fonts/rajdhani-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/rajdhani-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'rajdhanibold';
+    src: url('../fonts/rajdhani-bold-webfont.woff2') format('woff2'),
+         url('../fonts/rajdhani-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	 font-family:'FontAwesome';
+	 src:url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+	 src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+	 url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+	 url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+	 url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+	 url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	 font-weight:normal;font-style:normal
+}
+
+* { padding:0; margin:0; }
+body { font-family: 'latoregular'; font-weight:400; }
+a, a:hover, a:focus { text-decoration: none; }
+a, img { border:0; outline:none; }
+ul, ul li { list-style:none; }
+
+
+
+/* Common Class */
+
+.clearfix:after { clear:both; display:block; content:""; }
+
+.ml10 { margin-left:10px!important; }
+.ml35 { margin-left:35px!important; }
+
+
+/* Heading class */
+
+.heading-1 { font-size:36px; color:#000000; margin:0 0 20px 0; font-family: 'latoblack'; }
+.heading-2 { font-size:30px; color:#000000; margin:0 0 20px; font-family: 'latoblack'; }
+.heading-3 { font-size:72px; color:#e32129; margin:10px 0 20px 0; font-family: 'latoblack'; }
+.heading-4 { font-size:18px; color:#fdfeff; margin:0px 0 13px; font-family: 'latobold'; text-transform:uppercase; }
+.heading-5 { font-size:36px; color:#000000; margin:0; }
+.heading-6 { background-color:rgba(227,33,41,0.9); font-family: 'latoblack'; font-size:36px; color:#fefefe; text-shadow:0 1px 3px rgba(0,0,0,0.3); display:inline-block; padding: 5px 12px; margin:0; }
+
+/* Advertisement box css */
+
+.adv-box, .adv-box-1 { background:#18ff00; width:100%; height:250px; font-size:17px; color:#000;
+	display:inline-flex;
+	display:-webkit-inline-flex;
+	align-items: center;
+	-webkit-align-items: center;
+  	justify-content: center;
+	-webkit-justify-content: center;
+}
+.adv-box img, .adv-box-1 img { width:100%; height:100%; }
+
+.adv-box-1 { width:728px; height:90px; }
+
+
+/* Button css */
+
+.red-btn {
+	background:#e32129;
+	font-family: 'latobold'; 
+	padding:10px;
+	line-height:normal;
+	font-size:12px;
+	color:#fff;
+	text-transform:uppercase;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	display:inline-flex;
+	-webkit-display:inline-flex;
+}
+.red-btn i { font-size:20px; vertical-align:top; margin: 0 0 0 8px; line-height:14px; }
+.red-btn:hover { color:#fff; }
+
+
+/* Header css */
+
+#hpart .searchbox { position:relative; display:none; }
+#hpart .searchbox .search-int { width:100%; height:100px; background-color:#eeeeee; border:0; text-align:center; font-family: 'latoblack'; font-size:36px; 
+	color:#000000; padding-right:90px; padding-left:15px; 
+}
+#hpart .searchbox .fa-search { font-size:32px; color:#063579; position:absolute; top:50%; right:30px; margin-top:-17px; cursor:pointer; }
+
+
+#hpart .header-cbox { background:#000000; padding:30px 0 20px; }
+#hpart .header-cbox .logo-box { float:left; padding-left:145px; }
+#hpart .header-cbox .add-banner { float:left; padding-left:80px; }
+#hpart .header-cbox .logo-sub-text { font-size:30px; color:#fff; font-family: 'latoblack_italic'; text-align:left; margin-top:15px; margin-left:135px; }
+
+#hpart .nav-box { background:#f9f9f9; box-shadow: 0 1px 5px rgba(0,0,0,0.3); -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3); height:51px; position:relative; }
+#hpart .nav-box #main-nav {
+	align-items: center;
+	-webkit-align-items: center;
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	height: 51px;
+}
+#hpart .nav-box #main-nav .nav-links { padding:0; margin:0 0 0 10px; float:left; }
+#hpart .nav-box #main-nav .nav-links li { padding:0; margin:0 7px; float:left; }
+#hpart .nav-box #main-nav .nav-links li a { font-size:20px; text-transform:uppercase; color:#020306; }
+
+#hpart .nav-box .nav-rpart { float:right; }
+#hpart .nav-box .nav-rpart .search-btn {
+	display:inline-flex;
+	display:-webkit-inline-flex;
+	align-items: center;
+	-webkit-align-items: center;
+  	justify-content: center;
+	-webkit-justify-content: center;
+	border-left: solid 1px #dddddd;
+	width:50px;
+	height:51px;
+	color:#000000;
+	font-size:17px;
+}
+
+#hpart .nav-box .nav-rpart .reg-btn {
+	background:#e32129;
+	font-size:18px;
+	text-transform:uppercase;
+	color:#fff;
+	font-family: 'latobold';	
+	display:inline-flex;
+	display:-webkit-inline-flex;
+	align-items: center;
+	-webkit-align-items: center;
+  	justify-content: center;
+	-webkit-justify-content: center;
+  	width: 220px;
+	height: 51px;
+}
+
+
+/* Main banner css */
+
+#main-banner { padding:30px 0; }
+.home-bg-1 { background:url(../images/main-hero-bg.jpg) no-repeat center top; }
+.home-bg-2 { background:url(../images/main-hero-bg-1.jpg) no-repeat center top; }
+
+#main-banner .main-hero-slider { margin-left:-15px; }
+#main-banner .main-hero-slider .main-hero-box { position:relative; }
+#main-banner .main-hero-slider .main-hero-box .banner-content { position:absolute; bottom:50px; left:0; }
+#main-banner .main-hero-slider .main-hero-box .banner-content .text { background-color:rgba(254,254,254,0.9); margin:0; padding:10px 30px 10px 10px; font-size:18px; color:#000000; width:calc(100% - 210px); }
+#main-banner .main-hero-slider .main-hero-box .banner-content .black-arrow { background:#000000; position:initial; left:0; }
+
+#main-banner .main-hero-slider .slick-dots { position:absolute; bottom:30px; left:50%; margin:0; transform:translateX(-50%); -webkit-transform:translateX(-50%); }
+#main-banner .main-hero-slider .slick-dots li { float:left; margin:0 3px; line-height:0; }
+#main-banner .main-hero-slider .slick-dots li button {
+	background: #ffffff;
+	font-size:0;
+	border:0;	
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	height: 16px;
+	width: 16px;
+}
+#main-banner .main-hero-slider .slick-dots li.slick-active button {
+	background:#e32129;	
+}
+
+#main-banner .banner-sidebar { margin-right:-15px; }
+#main-banner .banner-sidebar .hero-tabs { background:#0d0d0d; padding:10px 20px 0; height:86px; 
+	border:solid 1px #0d0d0d;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	margin-bottom:10px;
+	color:#fff;
+	display:flex;
+	display:-webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+#main-banner .banner-sidebar .hero-tabs .name { font-family: 'latobold'; font-size:18px; line-height:18px; margin-bottom:3px; width:100%; }
+#main-banner .banner-sidebar .hero-tabs .text { font-size:12px; line-height:normal; margin:0; }
+
+#main-banner .banner-sidebar .btn-box .red-btn { width:100%; height:49px; align-items:center; font-size:18px; padding:0 20px; text-transform:none; justify-content:space-between; -webkit-justify-content:space-between; }
+#main-banner .banner-sidebar .btn-box .red-btn .fa-angle-right { font-size:30px; }
+
+#main-banner .banner-sidebar .hero-tabs.red { background:#e32129; border: solid 1px #fff; }
+
+
+/* Fixtures & Results css */
+
+#fixtures-results { padding:50px 0; }
+
+#fixtures-results .title-box { padding-bottom:50px; }
+#fixtures-results .title-box .title-text { float:left; }
+#fixtures-results .title-box .title-text .heading-2 { margin-bottom:0; }
+#fixtures-results .title-box .title-text .sub-title-text { font-size:18px; color:#000000; }
+
+#fixtures-results .title-box .comp-select { float:right; }
+#fixtures-results .title-box .comp-select .red-drop-down {  
+	background:#e32129;
+	font-family: 'latobold'; 
+	padding:10px;
+	line-height:normal;
+	font-size:12px;
+	color:#fff;	
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	display:inline-flex;
+	-webkit-display:inline-flex;
+	border: solid 1px #dddddd;
+	cursor:pointer;
+}
+#fixtures-results .title-box .comp-select .red-drop-down i {
+	font-size:20px; vertical-align:top; margin: 0 10px 0 35px; line-height:15px;
+}
+
+#fixtures-results .games-slider { margin:30px 0 0 0; }
+#fixtures-results .games-slider .slick-list { 
+	margin: 0 auto;
+	width: calc(100% - 100px); 
+}
+
+#fixtures-results .games-slider .game-box {
+	border: solid 1px #dddddd;
+	background:#fff; 
+	border-radius:0 0 3px 3px;
+	-webkit-border-radius:0 0 3px 3px;
+	margin: 0 5px;
+}
+#fixtures-results .games-slider .schedule-box { background:#000000; height:20px; align-items:center; -webkit-align-items:center; justify-content:space-between; -webkit-justify-content:space-between; }
+#fixtures-results .games-slider .schedule-box .text { float:left; font-size:10px; color:#fff; font-family: 'latobold'; padding-left:10px; 
+display:inline-flex; display:-webkit-inline-flex; align-items:center; -webkit-align-items:center; height:100%;
+}
+#fixtures-results .games-slider .schedule-box .view-btn { float:right; background:#e32129; font-size:10px; color:#fff; font-family: 'latobold'; height:20px; width:50px; display:inline-flex; display:-webkit-inline-flex; align-items:center; -webkit-align-items:center; justify-content:center; -webkit-justify-content:center; }
+#fixtures-results .games-slider .schedule-box .view-btn i { font-size:14px; line-height:0; margin-left:5px; }
+
+#fixtures-results .games-slider .team-box { padding:15px 10px; font-size:14px; color:#000; font-family: 'latobold'; }
+#fixtures-results .games-slider .team-box .team-name { float:left; }
+#fixtures-results .games-slider .team-box .team-score { float:right; }
+
+#fixtures-results .games-slider .slick-prev::before, 
+#fixtures-results .games-slider .slick-next::before { content:'\f053'; font-family:'FontAwesome'; font-size:16px; color:rgba(255,255,255,1); opacity:1; }
+#fixtures-results .games-slider .slick-next::before { content:'\f054'; }
+
+#fixtures-results .games-slider .slick-prev, 
+#fixtures-results .games-slider .slick-next { background:#b2b2b2; height:100%; width:45px; border:0; position:absolute; top:0; left:0; font-size:0; 
+	border-radius:3px; -webkit-border-radius:3px;
+}
+#fixtures-results .games-slider .slick-next { left:inherit; right:0; z-index:10; }
+
+#fixtures-results .btn-box { padding:40px 0 0 0; }
+
+
+
+/* Social hub css */
+
+#social-tabs { padding:40px 0 50px; }
+#social-tabs .box-1,
+#social-tabs .box-2 { float:left; }
+#social-tabs .box-1 { width:46.5%; }
+#social-tabs .box-2 { width:calc(26.75% - 10px); margin-left:10px; }
+#social-tabs .social-tiles .red-box,
+#social-tabs .social-tiles .black-box, 
+#social-tabs .social-tiles .img-box { width:calc(50% - 2px); height:185px; float:left; position:relative; margin: 1px; }
+#social-tabs .social-tiles .red-box,
+#social-tabs .social-tiles .black-box { background:#e32129; padding:15px; font-size:12px; color:#fefefe; font-family: 'rajdhanisemibold'; }
+#social-tabs .social-tiles .black-box { background:#252525;  }
+#social-tabs .social-tiles .red-box .fa-facebook,
+#social-tabs .social-tiles .black-box .fa-twitter { color:#fdfcfc; font-size:20px; margin-bottom:10px; }
+#social-tabs .social-tiles .red-box a,
+#social-tabs .social-tiles .black-box a { color:#fefefe; text-decoration:underline; }
+#social-tabs .social-tiles .img-box img { width:100%; height:100%;  }
+#social-tabs .social-tiles .insta-link { color:#fff; position:absolute; top:15px; right:15px; font-size:18px; cursor:pointer; line-height:0; }
+
+#social-tabs .box-1 .social-stat-box { margin-top:10px; }
+
+#social-tabs .box-2 .img-arrow { margin-bottom:10px; }
+#social-tabs .box-2 .img-arrow, #get-involved .tiles-box .img { position:relative; }
+#social-tabs .box-2 .img-arrow img { width:100%; height:100%; }
+#main-banner .main-hero-slider .banner-content .black-arrow,
+#get-involved .tiles-box .img .red-arrow,
+#social-tabs .box-2 .img-arrow .red-arrow { position: absolute;
+	bottom:0;
+	right:0; font-size:30px;
+	z-index:1; background:#e32129;
+	width:34px; height:34px;
+	display:inline-flex;
+	display:-webkit-inline-flex;
+	align-items: center;
+	-webkit-align-items: center;
+  	justify-content: center;
+	-webkit-justify-content: center;
+	color:#fff;
+}
+
+
+/* Get Involved css */
+
+#get-involved { padding:80px 0 40px; }
+#get-involved .get-involved-cpart { position:relative; padding-bottom:80px; }
+#get-involved .get-involved-cpart .boy-hero,
+#get-involved .get-involved-cpart .girl-hero { position:absolute; left:25px; top:-75px; }
+#get-involved .get-involved-cpart .girl-hero { left:inherit; right:0; top:-100px; }
+
+#get-involved .get-involved-cpart .postcode-box .search-box { width:340px; height:67px; background:#efefef; margin:0 auto; }
+#get-involved .get-involved-cpart .postcode-box .search-box input { width:calc(100% - 67px); height:100%; background:#efefef; border:0; padding:0 15px; font-size:20px; color:#000001; float:left; }
+#get-involved .get-involved-cpart .postcode-box .search-box .search-btn { width:67px; height:67px; background:#e32129; font-size:30px; color:#fff; 
+	vertical-align:top;
+	cursor:pointer;
+	display:inline-flex;
+	display:-webkit-inline-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	justify-content:center;
+	-webkit-justify-content:center;
+}
+#get-involved .get-involved-cpart .text { font-size:18px; color:#0d0d0d; line-height:normal; padding:25px 0 0 0; }
+
+
+#get-involved .tiles-box .img img { width:100%; }
+#get-involved .tiles-box .text {
+	background:#111111;
+	height:70px;
+	font-size:24px;
+	color:#fff;
+	text-transform:uppercase;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	justify-content:center;
+	-webkit-justify-content:center;
+	font-family: 'latobold';
+}
+
+/* EDFL Media css */
+
+#edfl-media { padding:60px 0 50px 0; background:url(../images/edfl-media-bg.jpg) repeat 0 0; }
+
+#edfl-media .media-title .heading-2 { margin-bottom:5px; }
+#edfl-media .media-title .sub-title-text { font-size:18px; color:#000; }
+
+
+#edfl-media .media-for { border-bottom: solid 1px #fff; }
+#edfl-media .media-for .video-desc {
+	left: 30px;
+	position: absolute;
+	top: 30px;
+	width: 385px;
+}
+#edfl-media .media-for .video-desc .text-1 {
+	color: #888888;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-bottom:5px;
+}
+#edfl-media .media-for .video-desc .text-2 {
+	color: #fff;
+	font-size: 30px;
+	line-height: normal;
+	padding-bottom:10px;
+	font-family: 'latoblack'; 
+}
+#edfl-media .media-for .video-desc .text-3 {
+	color: #fff;
+	font-size: 14px;
+}
+
+#edfl-media .media-nav { padding:15px 0 10px 0; margin: 0px; background:#000; }
+#edfl-media .media-nav .slick-slide { padding: 0 15px; }
+#edfl-media .media-nav .sm-video-box { border: solid 2px transparent; }
+#edfl-media .media-nav .sm-video-box img { width:100%; }
+#edfl-media .media-nav .sm-video-desc {
+	font-size:11px;
+	color:#fff;
+	padding-top:10px;
+}
+#edfl-media .media-nav .slick-current .sm-video-box { border: solid 2px #fff; }
+
+
+#edfl-media .sidebar .action-box { margin-top:15px; 
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	padding:15px;
+	background-color:#000;
+}
+#edfl-media .sidebar .action-box .title {
+	font-size:18px; color:#ffffff; font-family: 'latoblack'; line-height:normal; padding:5px 0 0 0;
+}
+#edfl-media .sidebar .action-box .desc {
+	font-size:14px; color:#ffffff; line-height:normal;
+}
+
+/* News css */
+
+#news-box { background:#ebebeb; padding:30px 0; }
+
+#news-box .news-detail-box {
+	background:#ffffff;
+	padding:30px;
+}
+#news-box .news-detail-box .inn-banner { margin-bottom:20px; }
+#news-box .news-detail-box .inn-banner img { width:100%; }
+
+#news-box .news-detail-box .news-container .share-btn-box { padding-bottom:30px; }
+#news-box .news-detail-box .news-container .desc p { margin:0 0 25px; font-size:18px; color:#000; }
+
+#news-box .sidebar { background:#fff; padding:15px; }
+#news-box .sidebar .article-box { padding-bottom:25px; }
+#news-box .sidebar .article-box .name { font-size:15px; color:#000; font-family: 'latoblack'; line-height:normal; padding:10px 0; }
+#news-box .sidebar .article-box .text { font-size:14px; color:#000; line-height:normal; }
+
+
+/* Patners css */
+
+#edfl-partners { background:#ffffff; padding:30px 0; }
+
+#edfl-partners .partners-title-box .add-banner img { width:326px; }
+
+#edfl-partners .logos-row-1 { 
+	border-top: solid 1px #cccccc; 
+	border-bottom: solid 1px #cccccc;
+	padding:40px 0;
+	margin:25px 0;
+}
+
+#edfl-partners .partners-logo-slider > div { 
+	display:inline-flex; 
+	display:-webkit-inline-flex; 
+	padding:0 8px; 
+	height:100px; 
+	justify-content:center;
+	-webkit-justify-content:center;
+	align-items:center;
+	-webkit-align-items:center;
+}
+
+
+/* Footer css */
+
+#fpart .fpart-content {
+	background:#0d0d0d;
+	padding:25px 0;
+}
+
+#fpart .fpart-content .compay-info .fpart-logo img { width:145px; }
+#fpart .fpart-content .compay-info .logo-sub-text {
+	font-size:18px;
+	text-transform:uppercase;
+	color:#fdfeff;
+	font-family: 'latobold'; 
+	padding:20px 0 10px 0;
+	line-height:normal;
+}
+#fpart .fpart-content .compay-info .address-text,
+#fpart .fpart-content .compay-info .phone-text,
+#fpart .fpart-content .compay-info .email-text a {
+	font-size:13px;
+	color:#fefdfd;
+	font-family: 'rajdhanisemibold';
+}
+#fpart .fpart-content .compay-info .phone-text {
+	font-size:14px;
+	font-family: 'rajdhanibold';
+	padding:13px 0 10px;
+}
+
+#fpart .fpart-content .fpart-link { padding:0; margin:0; }
+#fpart .fpart-content .fpart-link li { padding:0 0 7px; margin:0; font-size:14px; line-height:normal; }
+#fpart .fpart-content .fpart-link li a { color:#fdfeff; }
+#fpart .fpart-content .fpart-link li a:hover { color:#e12129; }
+
+#fpart .fpart-content .other-info-box .search-box .fpart-search-int {
+	background:#eeeeee;
+	width:196px;
+	height:40px;
+	text-align:left;
+	border: solid 1px #cccccc;
+	float:right;
+}
+#fpart .fpart-content .other-info-box .search-box .fpart-search-int input[type=text] {
+	width: calc(100% - 30px);
+	height:100%;
+	border:0;
+	font-size:14px;
+	color:#000000;
+	text-transform:uppercase;
+	padding:0 0 0 10px;
+	background:#eeeeee;
+	font-family: 'rajdhanibold';
+}
+#fpart .fpart-content .other-info-box .search-box .fpart-search-int .fa-search {
+	color:#e32129;
+	margin-left:5px;
+	font-size:15px;
+	cursor:pointer;
+}
+
+#fpart .fpart-content .other-info-box .social-icons { padding:0; margin:20px -7px 25px 0; }
+#fpart .fpart-content .other-info-box .social-icons li { padding:0 7px; margin:0; display:inline-block; line-height:normal; }
+#fpart .fpart-content .other-info-box .social-icons li a { color:#ffffff; font-size:25px; }
+#fpart .fpart-content .other-info-box .copyright-text { font-size:10px; color:#fefdfd; text-align:right; }
+
+
+#fpart .powered-box {
+	background:#000000;
+	height:52px;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+}
